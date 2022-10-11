@@ -1,0 +1,26 @@
+.header {
+    padding: 19px 0 16px 0;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 169px 193px 202px 209px 226px;
+    column-gap: 33px;
+    justify-content: space-between;
+    &__country {
+        display: grid;
+        grid-template-columns: 28px minmax(130px, 189px);
+        column-gap: 10px;
+        &-flag {
+            width: 100%;
+        }
+        &-text {
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+        }
+    }
+}
