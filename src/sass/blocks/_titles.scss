@@ -1,0 +1,9 @@
+.title{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #ffffff;
+    &_dark {
+        color: $dark-text;
+    }
+}

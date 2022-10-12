@@ -1,0 +1,64 @@
+.offer {
+    padding: 79px 0 61px 0;
+    background: url('../img/offer/sliderBG.jpg') center (100%/cover) no-repeat;
+    &__title {
+        display: block;
+        margin: 0 auto;
+        width: 625px;
+        text-align: center;
+    }
+    &__tabs {
+        display: grid;
+        margin: 0 auto;
+        margin-top: 25px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        width: 865px;
+        height: 65px;
+        grid-template-columns: 175px 140px 170px 145px 110px 125px;
+        justify-items: center;
+        align-items: center;
+    }
+    &__tab {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-left: 1px solid #ececec;
+        width: 100%;
+        height: 49px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            color: $main-color;
+            font-weight: 700;
+        }
+        &:nth-child(1){
+            border: none;
+        }
+    }
+    &__slider {
+        position: relative;
+        margin-top: 44px;
+        &-prev, &-next {
+            position: absolute;
+            top: 39%;
+            left: 55px;
+        }
+        &-next {
+            // left: 1065px;
+            left: unset;
+            right: 55px;
+        }
+    }
+    &__slide {
+        width: 947px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -20,7 +20,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 264px;
-            color: #393939;
+            color: $dark-text;
             font-size: 18px;
             font-weight: 300;
             line-height: 26px;
@@ -51,7 +51,7 @@
     &__title {
         display: block;
         margin: 33px auto 37px auto;
-        color: #393939;
+        color: $dark-text;
         font-size: 48px;
         font-weight: 700;
         line-height: 30.04px;
