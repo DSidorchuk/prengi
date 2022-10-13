@@ -66,6 +66,11 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 color: #ffffff;
+                transition: all 0.5s;
+                &:hover {
+                    color: $main-color;
+                    font-weight: 700;
+                }
             }
         }
     }
