@@ -1,0 +1,21 @@
+.start {
+    margin-top: 80px;
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        width: 302px;
+        height: 302px;
+    }
+    &__title {
+        margin: 0 auto;
+        margin-top: 74px;
+        display: block;
+        width: 588px;
+        text-align: center;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: block;
+    }
+}
