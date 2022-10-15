@@ -14,14 +14,6 @@
             }
         }
     }
-    .promo {
-        &__menu {
-            &-items {
-                width: 100%;
-            }
-        }
-
-    }
 }
 
 @media (max-width: 992px) {
@@ -45,12 +37,14 @@
         }
     }
     .promo {
-        &__title {
-            font-size: 31px;
+        &__menu{
+            &-items {
+                justify-content: space-around;
+            }
         }
-        &__subtitle{
-            width: 390px;
-            font-size: 22px;
+        &__img {
+            width: 282px;
+            height: 370px;
         }
     }
 }
@@ -61,11 +55,73 @@
     .container {
         max-width: 540px;
     }
+    .header {
+        display: none;
+    }
+    .promo {
+        &__top{
+            grid-template-columns: 1fr;
+            grid-template-rows: 65px auto;
+            row-gap: 30px;
+        }
+        &__menu {
+            justify-content: end;
+            width: 480px;
+            &-items {
+                justify-content: space-between;
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__title {
+            margin-top: 85px;
+        }
+        &__img {
+            width: 232px;
+            height: 304px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
         padding: 0 10px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .promo {
+        padding-top: 10px;
+        &__top {
+            grid-template-rows: 65px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__title {
+            margin-top: 190px;
+            width: 100%;
+            font-size: 34px;
+            line-height: 40px;
+        }
+        &__subtitle{
+            font-size: 21px;
+            width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+        &__btn {
+            display: block;
+            margin: 50px auto 0 auto;
+        }
+        &__slider {
+            bottom: 20px;
+            &-prev, &-next {
+                display: none;
+            }
+        }
     }
 }
