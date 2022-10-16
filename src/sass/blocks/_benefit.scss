@@ -10,7 +10,7 @@
         display: grid;
         margin: 0 auto;
         margin-top: 44px;
-        grid-template: 355px / repeat(2, 570px);
+        grid-template: repeat(3, 355px) / repeat(2, 570px);
     }
     &__item {
         position: relative;
