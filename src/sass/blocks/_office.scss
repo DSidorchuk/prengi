@@ -1,0 +1,36 @@
+.office {
+    display: none;
+    margin-top: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 110px);
+        grid-auto-rows: 110px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__country {
+        display: grid;
+        grid-template-columns: 28px minmax(130px, 190px);
+        column-gap: 10px;
+        &-flag {
+            height: 33px;
+            img {
+                width: 28px;
+            }
+        }
+        &-info {
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        &-address, &-phone {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+        }
+    }
+}
